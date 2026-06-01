@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react"
 import { FaGithub } from "react-icons/fa"
+import { AnimatedBorderButtons} from "@/components/AnimatedBorderButtons";
 
 const projects = [
     {
@@ -87,15 +88,18 @@ export const Projects = () => {
 
                         </div>
                         {/* content */}
-                        <div>
-                            <div>
-                                <h3>{project.title}</h3>
-                                <ArrowUpRight />
+                        <div className="p-6 space-y-4 ">
+                            <div className="flex items-start justify-between">
+                                <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{project.title}</h3>
+                                <ArrowUpRight className="w-5 h-5 
+                  text-muted-foreground group-hover:text-primary
+                   group-hover:translate-x-1 
+                   group-hover:-translate-y-1 transition-all" />
                             </div>
-                            <p>{project.description}</p>
-                            <div>
-                                {project.tags.map((tag,tagIdx)=>(
-                                    <span>{tag}</span>
+                            <p className="text-muted-foreground text-sm ">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 ">
+                                {project.tags.map((tag, tagIdx) => (
+                                    <span key={tagIdx} className="px-4 py-1.5 rounded-full bg-surface text-sm font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tag}</span>
                                 ))}
                             </div>
                         </div>
@@ -103,6 +107,14 @@ export const Projects = () => {
 
                 ))}
 
+            </div>
+            {/* view all project */}
+            <div className="text-center mt-12 animate-fade-in animation-delay-500">
+                <AnimatedBorderButtons >
+                    View All Projects
+                    <ArrowUpRight className="w-5 h-5" />
+                                
+                </AnimatedBorderButtons>
             </div>
         </div>
     </section>
