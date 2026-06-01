@@ -66,7 +66,7 @@ export const Hero = () => {
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                            Hi, I'm Chirag, a passionate software engineer specializing in building innovative web applications. With a strong foundation in full-stack development and a keen eye for design, I create seamless digital experiences that blend functionality with aesthetics. Let's collaborate to bring your ideas to life!
+                            Hi, I'm Chandramani Kaushik, a passionate software engineer specializing in building innovative web applications. With a strong foundation in full-stack development and a keen eye for design, I create seamless digital experiences that blend functionality with aesthetics. Let's collaborate to bring your ideas to life!
 
                         </p>
                     </div>

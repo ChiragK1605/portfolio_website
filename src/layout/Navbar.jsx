@@ -6,6 +6,7 @@ const navLinks = [
     {href:"#projects",label:"Projects"},
     {href:"#experience",label:"Experience"},
     {href:"#testimonials",label:"Testimonials"},
+    {href:"#contact",label:"Contact"},
     
 ]
 export const Navbar = () => {
@@ -35,7 +36,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* CTA Button */}
-            <div className="hidden md:block"><Button size="sm">Contact Me</Button></div>
+            <div className="hidden md:block"><Button size="sm"><a href="#contact">Contact Me</a></Button></div>
             {/* Mobile Menu Button */}
             <button className = " md:hidden p-2 text-foreground cursor-pointer" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                 { isMobileMenuOpen ? <X size={24} /> : <Menu size={24} /> }

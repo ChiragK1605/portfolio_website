@@ -63,7 +63,7 @@ export const Projects = () => {
 
             </div>
             {/* Project-grid */}
-            <div className="grid md:grid-col-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
                 {projects.map((project, idx) => (
                     <div key={idx} className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
                         style={{ animationDelay: `${(idx + 1) * 100}ms` }}
