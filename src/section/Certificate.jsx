@@ -4,58 +4,32 @@ import { AnimatedBorderButtons} from "@/components/AnimatedBorderButtons";
 
 const certificates = [
     {
-        title: "Multimodal Summarization and Translation System",
+        title: "Hack@BVP 7.0 Finalist",
         description:
-            "The Multimodal Summarization and Translation System is an AI-based application that processes text, audio,and video inputs to generate concise summaries and translated outputs. The system uses OpenAI Whisper forspeech-to-text conversion and BART for intelligent text summarization. It provides a user-friendly interface usingStreamlit and supports multilingual translation for better accessibility.",
-        image: "/projects/project1v2.png",
-        tags: ["Python",
-                "Streamlit",
-                "OpenAI Whisper",
-                "BART",
-                "NLP",],
-        link: "#",
-        github: "https://github.com/ChiragK1605/Multimodal-Summarization-and-Translation-System",
+            "Recognized as a finalist at Hack@BVP 7.0 for developing an innovative technology solution. Demonstrated strong problem-solving, teamwork, and technical skills while competing against talented participants in a highly competitive hackathon environment.",
+        image: "/certificates/hackathon.jpeg",
+        
     },
     {
-        title: "E-Commerce Platform",
+        title: "GenAI Powered Data Analytics Job Simulation",
         description:
-            "EcoBloom is a sustainability-focused website that promotes plants and thier products. It is designed with the help of Next.js and Auth,js Framework.",
-        image: "/projects/project2v2.png",
-        tags: ["Next.js",
-                "Auth.js",
-                "JavaScript",
-                "Tailwind CSS",
-                "E-Commerce",],
-        link: "#",
-        github: "https://github.com/ChiragK1605/EcoBloom",
+            "Completed Tata's GenAI Powered Data Analytics Job Simulation, gaining hands-on experience in data analysis, business insights generation, and leveraging Generative AI tools to solve real-world business challenges and support data-driven decision-making.",
+        image: "/certificates/tata.jpeg",
+        
     },
     {
-        title: "PDFBot (RAG Implementation)",
+        title: "Generative AI Essentials",
         description:
-            "An AI-powered PDF chatbot that enables users to upload documents and ask natural language questions. Built using LangChain, FAISS Vector Database, HuggingFace Embeddings, and Groq LLM to implement Retrieval-Augmented Generation (RAG) for accurate document-based question answering.",
-        image: "/projects/project3v2.png",
-        tags: [
-            "Python",
-            "Streamlit",
-            "LangChain",
-            "RAG",
-            "HuggingFace"
-        ],
-        link: "#",
-        github: "https://github.com/ChiragK1605/PDFBot",
+            "Successfully completed the Generative AI Essentials certification, covering the fundamentals of Large Language Models (LLMs), prompt engineering, AI applications, and the practical use of generative AI technologies across various domains.",
+        image: "/certificates/tcs.jpeg",
+        
             },
     {
-        title: "Spotify Clone",
+        title: "Workshop on Text Analytics",
         description:
-            "Spotify Clone is a music streaming web application that replicates the core functionality of Spotify. It enables users to browse songs, create playlists, play/pause music, and explore artists and albums.",
-        image: "/projects/project4v2.png",
-        tags: ["HTML",
-                "CSS",
-                "JavaScript",
-                "Responsive Design",
-                "UI/UX"],
-        link: "#",
-        github: "https://github.com/ChiragK1605/Spotify-Clone",
+            "Participated in a hands-on workshop on Text Analytics, exploring natural language processing techniques, text preprocessing, sentiment analysis, and data-driven insights from unstructured textual data.",
+        image: "/certificates/ybi.jpeg",
+        
     },
 
 ]
@@ -67,16 +41,15 @@ export const Certificate = () => {
         <div className="container mx-auto px-6 relative z-10">
             {/* section header */}
             <div className="text-center mx-auto max-w-3xl mb-16 ">
-                <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Work</span>
+                <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">Achievements</span>
                 <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-                    Projects that
+                    Certifications &
                     <span className="font-serif italic font-normal text-white ">
                         {" "}
-                        Make an impact</span>
+                        Achievements</span>
                 </h2>
                 <p className="text-muted-foreground animate-fade-in animate-delay-400">
-                    A selection of my recent work, from complex web applications to
-                    innovative tools that solve real-world problems.
+                    A collection of certifications, hackathon achievements, and professional learning experiences that reflect my commitment to continuous growth in software development, artificial intelligence, and emerging technologies.
                 </p>
 
             </div>
@@ -115,7 +88,7 @@ export const Certificate = () => {
 
             </div>
             {/* view all project */}
-            <div className="text-center mt-12 animate-fade-in animation-delay-500">
+            {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
                 <a href="https://github.com/ChiragK1605?tab=repositories">
 
                 <AnimatedBorderButtons >
@@ -124,7 +97,7 @@ export const Certificate = () => {
                                 
                 </AnimatedBorderButtons>
                 </a>
-            </div>
+            </div> */}
         </div>
     </section>
 }
