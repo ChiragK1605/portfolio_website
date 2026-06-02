@@ -1,29 +1,36 @@
 import { Button } from "@/components/Button";
 import { ArrowRight, Download,ChevronDown } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const skills = [
+  
   "React",
   "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "Node.js",
+  "SQL",
+  "Python",
   "Git",
-  "GitHub Actions",
+  "GitHub",
+  "Vercel",
+  "LangChain",
+  "AI Agents",
+  "RAG",
+  "Huggingface-transformer",
+  "Vector Database",
+  "Prompt Engineering",
+  "Streamlit",
+  "REST APIs",
+  "Express.js",
+  "MongoDB",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
 ];
 
 import { AnimatedBorderButtons } from "@/components/AnimatedBorderButtons";
+import { SiVercel } from "react-icons/si";
 export const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* BG */}
@@ -72,13 +79,22 @@ export const Hero = () => {
                     </div>
                     {/* cta */}
                     <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+                            <a href="#contact">
                         <Button size="lg">
+
                             Contact Me <ArrowRight className="w-5 h-5" />
                         </Button>
+                        </a>
+                        <a
+                            href="/Chandramani_Kaushik_Resume.pdf"
+                            download
+                        >
+
                         <AnimatedBorderButtons>
                             <Download className="w-5 h-5" />
                                 Download CV
                         </AnimatedBorderButtons>
+                        </a>
                     </div>
                     {/* Links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
@@ -86,9 +102,9 @@ export const Hero = () => {
                             Follow Me:
                         </span>
                         {[
-                            { icon: FaGithub, href:"#" },
-                            { icon: FaLinkedin, href:"#" },
-                            { icon: FaTwitter, href:"#" },
+                            { icon: FaGithub, href:"https://github.com/ChiragK1605" },
+                            { icon: FaLinkedin, href:"https://www.linkedin.com/in/chandramani-kaushik-1488a2276" },
+                            { icon: SiVercel, href:"https://vercel.com/chiragk1605" },
                             ].map((social, idx)=>(
                                 <a key={idx} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
                                     {< social.icon className="w-5 h-5" />}
@@ -113,7 +129,7 @@ export const Hero = () => {
               />
                         <div className="realative glass rounded-3xl p-2 glow-border">
 
-                        <img src="/profile-photo.jpeg" alt="Chandramani Kaushik" className="w-full aspect-[4/5] object-cover rounded-2xl"/>
+                        <img src="/profile-photo-v2.png" alt="Chandramani Kaushik" className="w-full aspect-[4/5] object-cover rounded-2xl"/>
                         {/* floating badge */}
                         <div className="absolute -bottom-4 -right-4 glass rounded xl px-4 py-3 animate-float">
                             <div className="flex items-center gap-3 ">
