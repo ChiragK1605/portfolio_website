@@ -5,6 +5,7 @@ import { About } from "@/section/About"
 import { Projects } from "@/section/Projects"
 import { Experience } from "@/section/Experience"
 import { Testimonials } from "@/section/Testimonials"
+import { Certificate } from "@/section/Certificate"
 import { Contact } from "@/section/Contact"
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <Experience />
+      {/* <Experience /> */}
+      <Certificate />
       <Testimonials />
       <Contact />
       <Footer />
