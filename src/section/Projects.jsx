@@ -4,40 +4,58 @@ import { AnimatedBorderButtons} from "@/components/AnimatedBorderButtons";
 
 const projects = [
     {
-        title: "Fintech Dashboard",
+        title: "Multimodal Summarization and Translation System",
         description:
-            "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-        image: "/projects/project1.png",
-        tags: ["React", "Typescript", "NodeJS"],
+            "The Multimodal Summarization and Translation System is an AI-based application that processes text, audio,and video inputs to generate concise summaries and translated outputs. The system uses OpenAI Whisper forspeech-to-text conversion and BART for intelligent text summarization. It provides a user-friendly interface usingStreamlit and supports multilingual translation for better accessibility.",
+        image: "/projects/project1v2.png",
+        tags: ["Python",
+                "Streamlit",
+                "OpenAI Whisper",
+                "BART",
+                "NLP",],
         link: "#",
-        github: "#",
+        github: "https://github.com/ChiragK1605/Multimodal-Summarization-and-Translation-System",
     },
     {
         title: "E-Commerce Platform",
         description:
-            "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-        image: "/projects/project2.png",
-        tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+            "EcoBloom is a sustainability-focused website that promotes plants and thier products. It is designed with the help of Next.js and Auth,js Framework.",
+        image: "/projects/project2v2.png",
+        tags: ["Next.js",
+                "Auth.js",
+                "JavaScript",
+                "Tailwind CSS",
+                "E-Commerce",],
         link: "#",
-        github: "#",
+        github: "https://github.com/ChiragK1605/EcoBloom",
     },
     {
-        title: "AI Writing Assistant",
+        title: "PDFBot (RAG Implementation)",
         description:
-            "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-        image: "/projects/project3.png",
-        tags: ["React", "OpenAI", "Python", "FastAPI"],
+            "An AI-powered PDF chatbot that enables users to upload documents and ask natural language questions. Built using LangChain, FAISS Vector Database, HuggingFace Embeddings, and Groq LLM to implement Retrieval-Augmented Generation (RAG) for accurate document-based question answering.",
+        image: "/projects/project3v2.png",
+        tags: [
+            "Python",
+            "Streamlit",
+            "LangChain",
+            "RAG",
+            "HuggingFace"
+        ],
         link: "#",
-        github: "#",
-    },
+        github: "https://github.com/ChiragK1605/PDFBot",
+            },
     {
-        title: "Project Management Tool",
+        title: "Spotify Clone",
         description:
-            "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-        image: "/projects/project4.png",
-        tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
+            "Spotify Clone is a music streaming web application that replicates the core functionality of Spotify. It enables users to browse songs, create playlists, play/pause music, and explore artists and albums.",
+        image: "/projects/project4v2.png",
+        tags: ["HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive Design",
+                "UI/UX"],
         link: "#",
-        github: "#",
+        github: "https://github.com/ChiragK1605/Spotify-Clone",
     },
 
 ]
@@ -110,11 +128,14 @@ export const Projects = () => {
             </div>
             {/* view all project */}
             <div className="text-center mt-12 animate-fade-in animation-delay-500">
+                <a href="https://github.com/ChiragK1605?tab=repositories">
+
                 <AnimatedBorderButtons >
                     View All Projects
                     <ArrowUpRight className="w-5 h-5" />
                                 
                 </AnimatedBorderButtons>
+                </a>
             </div>
         </div>
     </section>
